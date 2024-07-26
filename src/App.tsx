@@ -36,7 +36,7 @@ export const App: React.FC = () => {
             <ol>
               ${selectedEmployees
                 .map(
-                  (employee, index) =>
+                  (employee) =>
                     `<li>${employee.lastName} ${employee.firstName} - ${employee.position}</li>`
                 )
                 .join("")}
@@ -65,7 +65,7 @@ export const App: React.FC = () => {
           <ol>
             ${selectedEmployees
               .map(
-                (emp, index) =>
+                (emp) =>
                   `<li>${emp.lastName} ${emp.firstName} - ${emp.position}</li>`
               )
               .join("")}
