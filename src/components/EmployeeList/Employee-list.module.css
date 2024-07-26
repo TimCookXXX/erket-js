@@ -1,0 +1,40 @@
+.listTitle {
+  color: var(--secondary-color);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.employeeList {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: employee-counter;
+}
+
+.employeeItem {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  counter-increment: employee-counter;
+  display: flex;
+  align-items: center;
+}
+
+.employeeItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.employeeNumber {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .listTitle {
+    font-size: 20px;
+  }
+}
